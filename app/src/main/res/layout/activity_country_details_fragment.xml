@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.country_details.CountryDetailsFragment">
+
+    <ScrollView
+        android:id="@+id/svBody"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingStart="@dimen/container_padding"
+            android:paddingEnd="@dimen/container_padding"
+            android:paddingBottom="@dimen/container_padding">
+
+            <TextView
+                android:id="@+id/tvCodeTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/country_code"
+                android:textColor="@color/black"
+                android:textSize="@dimen/small_text_size"
+                app:layout_constraintBaseline_toBaselineOf="@id/tvCode"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/tvCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/small_text_size"
+                android:layout_marginTop="@dimen/field_separator_margin"
+                android:layout_marginStart="@dimen/field_separator_margin"
+                app:layout_constraintStart_toEndOf="@+id/tvCodeTitle"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvNameTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/country_name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/small_text_size"
+                app:layout_constraintBaseline_toBaselineOf="@id/tvName"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/small_text_size"
+                android:layout_marginTop="@dimen/field_separator_margin"
+                android:layout_marginStart="@dimen/field_separator_margin"
+                app:layout_constraintStart_toEndOf="@+id/tvNameTitle"
+                app:layout_constraintTop_toBottomOf="@+id/tvCode" />
+
+            <TextView
+                android:id="@+id/tvCapitalTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/country_capital"
+                android:textColor="@color/black"
+                android:textSize="@dimen/small_text_size"
+                app:layout_constraintBaseline_toBaselineOf="@id/tvCapital"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/tvCapital"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/small_text_size"
+                android:layout_marginTop="@dimen/field_separator_margin"
+                android:layout_marginStart="@dimen/field_separator_margin"
+                app:layout_constraintStart_toEndOf="@+id/tvCapitalTitle"
+                app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+            <TextView
+                android:id="@+id/tvEmojiTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/country_emoji"
+                android:textColor="@color/black"
+                android:textSize="@dimen/small_text_size"
+                app:layout_constraintBaseline_toBaselineOf="@id/tvEmoji"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/tvEmoji"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/small_text_size"
+                android:layout_marginTop="@dimen/field_separator_margin"
+                android:layout_marginStart="@dimen/field_separator_margin"
+                app:layout_constraintStart_toEndOf="@+id/tvEmojiTitle"
+                app:layout_constraintTop_toBottomOf="@+id/tvCapital" />
+
+            <TextView
+                android:id="@+id/tvCurrencyTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/country_currency"
+                android:textColor="@color/black"
+                android:textSize="@dimen/small_text_size"
+                app:layout_constraintBaseline_toBaselineOf="@id/tvCurrency"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/tvCurrency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/small_text_size"
+                android:layout_marginTop="@dimen/field_separator_margin"
+                android:layout_marginStart="@dimen/field_separator_margin"
+                app:layout_constraintStart_toEndOf="@+id/tvCurrencyTitle"
+                app:layout_constraintTop_toBottomOf="@+id/tvEmoji" />
+
+            <TextView
+                android:id="@+id/tvLanguageTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/country_language"
+                android:textColor="@color/black"
+                android:textSize="@dimen/small_text_size"
+                app:layout_constraintBaseline_toBaselineOf="@id/tvLanguage"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/tvLanguage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/small_text_size"
+                android:layout_marginTop="@dimen/field_separator_margin"
+                android:layout_marginStart="@dimen/field_separator_margin"
+                app:layout_constraintStart_toEndOf="@+id/tvLanguageTitle"
+                app:layout_constraintTop_toBottomOf="@+id/tvCurrency" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

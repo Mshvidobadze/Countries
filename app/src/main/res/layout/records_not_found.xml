@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+android:paddingTop="0.2dp">
+
+
+
+<TextView
+    android:id="@+id/tvNoRecordFound"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/field_separator_margin"
+    android:layout_marginBottom="@dimen/field_separator_margin"
+    android:background="@color/white"
+    android:gravity="center"
+    android:padding="@dimen/container_dual_padding"
+    android:text="@string/no_record_found"
+    android:textColor="@color/black_custom"
+    android:textSize="@dimen/small_text_size"
+    android:visibility="visible" />
+
+</LinearLayout>
